@@ -1,6 +1,11 @@
 {
   "name": "hussexample/utils",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hussedev/huss-ui.git",
+    "directory": "packages/utils"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
