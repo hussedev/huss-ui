@@ -1,4 +1,4 @@
-import { Button } from "hussexample/core";
+import { Button } from "@hussexample/core";
 
 export default function Page() {
   return (

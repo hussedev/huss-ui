@@ -1,5 +1,5 @@
 {
-  "extends": "hussexample/tsconfig/react-ui.json",
+  "extends": "@hussexample/tsconfig/react-ui.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

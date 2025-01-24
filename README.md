@@ -35,11 +35,11 @@ This Turborepo includes the following packages and applications:
 
 - `apps/docs`: A placeholder documentation site powered by [Next.js](https://nextjs.org/)
 - `apps/storybook`: Component documentation site with Storybook
-- `hussexample/core`: core React components
-- `hussexample/eslint-config`: ESLint preset
-- `hussexample/ui`: Core React components
-- `hussexample/utils`: shared React utilities
-- `hussexample/tsconfig`: shared `tsconfig.json`s used throughout the monorepo
+- `@hussexample/core`: core React components
+- `@hussexample/eslint-config`: ESLint preset
+- `@hussexample/ui`: Core React components
+- `@hussexample/utils`: shared React utilities
+- `@hussexample/tsconfig`: shared `tsconfig.json`s used throughout the monorepo
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). Workspaces enables us to "hoist" dependencies that are shared between packages to the root `package.json`. This means smaller `node_modules` folders and a better local dev experience. To install a dependency for the entire monorepo, use the `-w` workspaces flag with `pnpm add`.
 
@@ -51,17 +51,17 @@ To make the ui library code work across all browsers, we need to compile the raw
 
 Running `pnpm build` from the root of the Turborepo will run the `build` command defined in each package's `package.json` file. Turborepo runs each `build` in parallel and caches & hashes the output to speed up future builds.
 
-For `hussexample/ui`, the `build` command is equivalent to the following:
+For `@hussexample/ui`, the `build` command is equivalent to the following:
 
 ```bash
 tsup src/*.tsx --format esm,cjs --dts --external react
 ```
 
-`tsup` compiles all of the components in the design system individually, into both ES Modules and CommonJS formats as well as their TypeScript types. The `package.json` for `hussexample/ui` then instructs the consumer to select the correct format:
+`tsup` compiles all of the components in the design system individually, into both ES Modules and CommonJS formats as well as their TypeScript types. The `package.json` for `@hussexample/ui` then instructs the consumer to select the correct format:
 
 ```json:ui/package.json
 {
-  "name": "hussexample/ui",
+  "name": "@hussexample/ui",
   "version": "0.0.0",
   "sideEffects": false,
   "exports":{
@@ -107,7 +107,7 @@ When adding a new file, ensure that its specifier is defined in `package.json` f
 
 ```json:ui/package.json
 {
-  "name": "hussexample/ui",
+  "name": "@hussexample/ui",
   "version": "0.0.0",
   "sideEffects": false,
   "exports":{
@@ -127,13 +127,13 @@ Storybook provides us with an interactive UI playground for our components. This
 
 - Use Vite to bundle stories instantly (in milliseconds)
 - Automatically find any stories inside the `stories/` folder
-- Support using module path aliases like `hussexample/ui` for imports
+- Support using module path aliases like `@hussexample/ui` for imports
 - Write MDX for component documentation pages
 
 For example, here's the included Story for our `Button` component:
 
 ```js:apps/docs/stories/button.stories.mdx
-import { Button } from 'hussexample/ui/button';
+import { Button } from '@hussexample/ui/button';
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
 <Meta title="Components/Button" component={Button} />
@@ -183,7 +183,7 @@ To generate your changelog, run `pnpm changeset` locally:
 When you push your code to GitHub, the [GitHub Action](https://github.com/changesets/action) will run the `release` script defined in the root `package.json`:
 
 ```bash
-turbo run build --filter=hussexample/docs^... && changeset publish
+turbo run build --filter=@hussexample/docs^... && changeset publish
 ```
 
 Turborepo runs the `build` script for all publishable packages (excluding docs) and publishes the packages to npm. By default, this example includes `huss` as the npm organization. To change this, do the following:

@@ -1,5 +1,5 @@
 {
-  "extends": "hussexample/tsconfig/storybook.json",
+  "extends": "@hussexample/tsconfig/storybook.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

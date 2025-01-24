@@ -1,5 +1,5 @@
 {
-  "name": "hussexample/eslint-config",
+  "name": "@hussexample/eslint-config",
   "version": "0.0.0",
   "private": true,
   "files": [

@@ -7,5 +7,5 @@
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
-  "ignore": ["hussexample/docs", "hussexample/storybook"]
+  "ignore": ["@hussexample/docs", "@hussexample/storybook"]
 }

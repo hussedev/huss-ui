@@ -23,10 +23,10 @@ importers:
 
   apps/docs:
     dependencies:
-      'hussexample/core':
+      '@hussexample/core':
         specifier: workspace:*
         version: link:../../packages/core
-      'hussexample/utils':
+      '@hussexample/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       next:
@@ -39,10 +39,10 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      'hussexample/eslint-config':
+      '@hussexample/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      'hussexample/tsconfig':
+      '@hussexample/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
       '@next/eslint-plugin-next':
@@ -63,7 +63,7 @@ importers:
 
   apps/storybook:
     dependencies:
-      'hussexample/ui':
+      '@hussexample/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       react:
@@ -73,10 +73,10 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      'hussexample/eslint-config':
+      '@hussexample/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      'hussexample/tsconfig':
+      '@hussexample/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
       '@storybook/addon-actions':
@@ -119,10 +119,10 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1
     devDependencies:
-      'hussexample/eslint-config':
+      '@hussexample/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      'hussexample/tsconfig':
+      '@hussexample/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
@@ -182,10 +182,10 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1
     devDependencies:
-      'hussexample/eslint-config':
+      '@hussexample/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      'hussexample/tsconfig':
+      '@hussexample/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
@@ -210,10 +210,10 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1
     devDependencies:
-      'hussexample/eslint-config':
+      '@hussexample/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      'hussexample/tsconfig':
+      '@hussexample/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':

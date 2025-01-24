@@ -1,5 +1,5 @@
 {
-  "name": "hussexample/utils",
+  "name": "@hussexample/utils",
   "version": "0.0.0",
   "repository": {
     "type": "git",
@@ -21,11 +21,11 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
-    "hussexample/tsconfig": "workspace:*",
+    "@hussexample/tsconfig": "workspace:*",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "eslint": "^8.57.0",
-    "hussexample/eslint-config": "workspace:*",
+    "@hussexample/eslint-config": "workspace:*",
     "tsup": "^8.0.2",
     "typescript": "5.5.4"
   },
