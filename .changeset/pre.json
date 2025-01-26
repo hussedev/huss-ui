@@ -1,6 +1,6 @@
 {
   "mode": "pre",
-  "tag": "next",
+  "tag": "beta",
   "initialVersions": {
     "@hussexample/docs": "0.0.0",
     "@hussexample/storybook": "0.0.0",
