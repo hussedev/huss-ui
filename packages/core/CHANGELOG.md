@@ -1,5 +1,11 @@
 # @hussexample/core
 
+## 2.0.0-beta.1
+
+### Patch Changes
+
+- [#5](https://github.com/hussedev/huss-ui/pull/5) [`9064b02`](https://github.com/hussedev/huss-ui/commit/9064b02a6eba25c26b20873b53872fcaa3b8b174) Thanks [@hussedev](https://github.com/hussedev)! - beta
+
 ## 2.0.0-next.0
 
 ### Major Changes
