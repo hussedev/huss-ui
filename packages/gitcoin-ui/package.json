@@ -20,7 +20,8 @@
     "build-storybook": "storybook build",
     "prepare": "husky",
     "chromatic": "chromatic",
-    "generate-component": "npx tsx generateComponent.ts"
+    "generate-component": "npx tsx generateComponent.ts",
+    "lint-staged": "pnpm exec lint-staged"
   },
   "exports": {
     "./styles.css": "./dist/gitcoin-ui.css",
@@ -185,9 +186,6 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
   },
   "msw": {
     "workerDirectory": [

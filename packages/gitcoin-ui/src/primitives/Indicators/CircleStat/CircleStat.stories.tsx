@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
+
 import { CircleStat } from "./CircleStat";
 
 const meta: Meta<typeof CircleStat> = {
@@ -11,13 +12,13 @@ const meta: Meta<typeof CircleStat> = {
     size: {
       control: {
         type: "select",
-        options: ["small", "medium", "large"]
+        options: ["small", "medium", "large"],
       },
       table: {
         type: {
           summary: "string",
         },
-      }
+      },
     },
     value: {
       control: "number",
@@ -65,11 +66,7 @@ export const HighPercentage: Story = {
 
 export const CustomColor: Story = {
   render: () => {
-    const stats = [
-      { value: 23 },
-      { value: 54 },
-      { value: 85 },
-    ];
+    const stats = [{ value: 23 }, { value: 54 }, { value: 85 }];
 
     return (
       <div className="flex space-x-4">
@@ -79,9 +76,9 @@ export const CustomColor: Story = {
             value={stat.value}
             className="text-white"
             colors={{
-              low: '#666666',
-              mid: '#444444',
-              high: '#000000',
+              low: "#666666",
+              mid: "#444444",
+              high: "#000000",
             }}
           />
         ))}
