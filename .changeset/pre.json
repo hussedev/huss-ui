@@ -8,9 +8,12 @@
     "@hussexample/eslint-config": "1.0.0",
     "@hussexample/tsconfig": "1.0.0",
     "@hussexample/ui": "1.0.0",
-    "@hussexample/utils": "1.0.0"
+    "@hussexample/utils": "1.0.0",
+    "@hussexample/gitcoin-ui": "0.0.0",
+    "@hussexample/types": "0.0.0"
   },
   "changesets": [
+    "large-pigs-sit",
     "odd-olives-fetch",
     "orange-owls-laugh"
   ]

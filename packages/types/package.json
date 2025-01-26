@@ -1,24 +1,20 @@
 {
-  "name": "@hussexample/utils",
+  "name": "@hussexample/types",
   "version": "2.0.0-beta.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/hussedev/huss-ui",
-    "directory": "packages/utils"
+    "directory": "packages/types"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
   "sideEffects": false,
   "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
-    "lint": "eslint \"src/**/*.ts*\"",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint . --max-warnings 0",
+    "clean": "rm -rf .turbo node_modules dist"
   },
   "devDependencies": {
     "@hussexample/tsconfig": "workspace:*",
