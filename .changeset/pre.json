@@ -10,5 +10,7 @@
     "@hussexample/ui": "1.0.0",
     "@hussexample/utils": "1.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "odd-olives-fetch"
+  ]
 }
