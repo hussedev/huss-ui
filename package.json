@@ -11,7 +11,8 @@
     "clean": "turbo clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
-    "changeset:pre": "changeset pre enter next",
+    "changeset:pre": "sh scripts/pre-release.sh",
+    "changeset:pre-exit": "changeset pre exit",
     "version-packages": "changeset version",
     "release": "turbo build --filter=@hussexample/docs^... --filter=@hussexample/storybook^... && changeset publish"
   },
