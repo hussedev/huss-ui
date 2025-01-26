@@ -1,0 +1,14 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "@hussexample/docs": "0.0.0",
+    "@hussexample/storybook": "0.0.0",
+    "@hussexample/core": "1.0.0",
+    "@hussexample/eslint-config": "1.0.0",
+    "@hussexample/tsconfig": "1.0.0",
+    "@hussexample/ui": "1.0.0",
+    "@hussexample/utils": "1.0.0"
+  },
+  "changesets": []
+}
