@@ -1,0 +1,5 @@
+---
+"@hussexample/core": major
+---
+
+pre
