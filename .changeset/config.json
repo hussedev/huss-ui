@@ -1,9 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": ["@changesets/changelog-github", { "repo": "hussedev/huss-ui" }],
   "baseBranch": "main",
   "commit": false,
-  "fixed": [],
+  "fixed": [["@hussexample/**"]],
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
