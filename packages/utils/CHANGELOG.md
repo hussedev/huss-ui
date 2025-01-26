@@ -1,5 +1,7 @@
 # @hussexample/utils
 
+## 2.0.0-beta.2
+
 ## 2.0.0-beta.1
 
 ## 2.0.0-next.0
