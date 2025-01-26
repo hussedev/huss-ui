@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hussedev/huss-ui.git",
+    "url": "https://github.com/hussedev/huss-ui",
     "directory": "packages/utils"
   },
   "main": "./dist/index.js",
