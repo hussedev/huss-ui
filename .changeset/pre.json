@@ -11,6 +11,7 @@
     "@hussexample/utils": "1.0.0"
   },
   "changesets": [
-    "odd-olives-fetch"
+    "odd-olives-fetch",
+    "orange-owls-laugh"
   ]
 }
