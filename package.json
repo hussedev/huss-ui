@@ -4,6 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/hussedev/huss-ui.git"
   },
+  "name": "with-changesets",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -15,13 +16,9 @@
     "changeset:pre-exit": "changeset pre exit",
     "version-packages": "changeset version",
     "release": "turbo build --filter=@hussexample/docs^... --filter=@hussexample/storybook^... && changeset publish",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint-staged": "turbo lint-staged"
   },
-  "packageManager": "pnpm@8.15.6",
-  "engines": {
-    "node": ">=18"
-  },
-  "name": "with-changesets",
   "dependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.1",
@@ -37,6 +34,14 @@
     "conventional-changelog-atom": "^5.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.2",
-    "prettier": "^3.4.2"
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
   }
 }

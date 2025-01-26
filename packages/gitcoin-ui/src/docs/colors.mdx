@@ -1,0 +1,31 @@
+import { Meta, ColorPalette, ColorItem, Title } from "@storybook/blocks";
+
+import { grantsStackUIKit, grantsStackDesignSystem } from "@/theme/colors";
+
+<Meta title="Styles/Colors" />
+
+# Color Palette
+
+## Grants Stack UI Kit
+
+<ColorPalette>
+  {Object.entries(grantsStackUIKit).map(([name, value]) => (
+    <ColorItem
+      key={name}
+      title={name}
+      colors={typeof value === "object" ? value : { [name]: value }}
+    />
+  ))}
+</ColorPalette>
+
+## Grants Stack Design System
+
+<ColorPalette>
+  {Object.entries(grantsStackDesignSystem).map(([name, value]) => (
+    <ColorItem
+      key={name}
+      title={name}
+      colors={typeof value === "object" ? value : { [name]: value }}
+    />
+  ))}
+</ColorPalette>

@@ -28,6 +28,9 @@
     "preview-storybook": {
       "dependsOn": ["^build"],
       "cache": false
+    },
+    "lint-staged": {
+      "cache": false
     }
   }
 }

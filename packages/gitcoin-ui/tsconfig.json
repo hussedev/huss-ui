@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "declaration": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "~checker/*": ["./src/features/checker/*"],
+      "~retrofunding/*": ["./src/features/retrofunding/*"],
+      "~application": ["./src/features/application"],
+      "~application/*": ["./src/features/application/*"],
+      "~pool": ["./src/features/pool"],
+      "~pool/*": ["./src/features/pool/*"],
+      "~program": ["./src/features/program"],
+      "~program/*": ["./src/features/program/*"],
+      "~project": ["./src/features/project"],
+      "~project/*": ["./src/features/project/*"]
+    },
+    "outDir": "./dist"
+  },
+  "include": ["src", "src/vite-env.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
